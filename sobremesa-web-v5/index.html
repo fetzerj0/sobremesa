@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobremesa | Conversaciones y eventos en Guatemala</title>
+    <meta
+      name="description"
+      content="Sobremesa reúne conversaciones, próximos eventos y comunidad para jóvenes que quieren aprender, socializar y pensar juntos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Sobremesa inicio">
+        <img src="assets/logo-icon.jpeg" alt="" />
+        <span>Sobremesa</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#eventos">Eventos</a>
+        <a href="#que-es">Qué es</a>
+        <a href="#temas">Temas</a>
+        <a href="#comunidad">Comunidad</a>
+      </nav>
+      <a class="nav-cta" href="https://forms.gle/3Y9qict5Uz8WKZyf7" target="_blank" rel="noopener">Entradas</a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <img
+          class="hero-image"
+          src="assets/sobremesa-hero-v3.png"
+          alt="Jóvenes conversando alrededor de una mesa en un ambiente cálido"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <h1>Ven por la pregunta, quédate por la conversación.</h1>
+          <p>
+            Descubre próximos eventos, reserva tu entrada y encuentra una mesa
+            donde las preguntas se vuelven conversación.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#eventos">Ver próximos eventos</a>
+            <a class="button glass" href="#que-es">Qué es Sobremesa</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Primer evento destacado">
+          <span>Próxima Sobremesa</span>
+          <strong>21 OCT</strong>
+          <p>Una conversación que vale la pena.</p>
+        </aside>
+      </section>
+
+      <section class="events section" id="eventos">
+        <div class="section-head split">
+          <div>
+            <p class="section-label">Agenda</p>
+            <h2>Próximas sobremesas</h2>
+          </div>
+          <p>
+            Un calendario para saber qué viene, comprar entradas y recibir avisos
+            cuando se abra un nuevo encuentro.
+          </p>
+        </div>
+
+        <div class="filters" aria-label="Filtros de eventos">
+          <button class="filter active" type="button" data-filter="all">Todos</button>
+          <button class="filter" type="button" data-filter="proximo">Próximos</button>
+          <button class="filter" type="button" data-filter="amor">Amor</button>
+          <button class="filter" type="button" data-filter="futuro">Futuro</button>
+          <button class="filter" type="button" data-filter="identidad">Identidad</button>
+          <button class="filter" type="button" data-filter="comunidad">Comunidad</button>
+        </div>
+
+        <div class="event-layout">
+          <article class="featured-event" data-tags="proximo comunidad futuro">
+            <div class="calendar-block">
+              <span>Miércoles</span>
+              <strong>21</strong>
+              <span>Octubre</span>
+            </div>
+            <div class="featured-copy">
+              <div class="status-row">
+                <span class="pill live">Entradas pronto</span>
+                <span class="pill">Ciudad de Guatemala</span>
+              </div>
+              <h3>Una conversación que vale la pena.</h3>
+              <p>
+                El primer encuentro de Sobremesa: una experiencia para aprender,
+                conocer nuevas personas y hablar de temas que normalmente se quedan
+                dando vueltas.
+              </p>
+              <dl>
+                <div>
+                  <dt>Tema</dt>
+                  <dd>Por anunciar</dd>
+                </div>
+                <div>
+                  <dt>Speaker</dt>
+                  <dd>Por anunciar</dd>
+                </div>
+                <div>
+                  <dt>Incluye</dt>
+                  <dd>Charla, conversación y convivencia</dd>
+                </div>
+              </dl>
+              <div class="event-actions">
+                <a class="button primary" href="https://forms.gle/3Y9qict5Uz8WKZyf7" target="_blank" rel="noopener">Comprar entrada</a>
+                <a class="button outline" href="#">Recuérdame</a>
+              </div>
+            </div>
+          </article>
+
+          <div class="event-list" aria-label="Más eventos">
+            <article class="mini-event" data-tags="proximo amor comunidad">
+              <span class="mini-date">Muy pronto</span>
+              <p>Amabilidad o coqueteo</p>
+              <small>Relaciones, señales y conversación honesta.</small>
+            </article>
+            <article class="mini-event" data-tags="proximo futuro identidad">
+              <span class="mini-date">Muy pronto</span>
+              <p>¿Por qué todos sentimos que vamos tarde?</p>
+              <small>Futuro, presión social y vida universitaria.</small>
+            </article>
+            <article class="mini-event" data-tags="proximo identidad comunidad">
+              <span class="mini-date">Muy pronto</span>
+              <p>¿Nos queremos o solo nos comparamos?</p>
+              <small>Identidad, autoestima y cultura joven.</small>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="concept section" id="que-es">
+        <div class="concept-copy">
+          <p class="section-label">¿Qué es Sobremesa?</p>
+          <h2>Ni solo charla. Ni solo salida.</h2>
+          <p>
+            Sobremesa es un espacio para jóvenes sociales, alegres y abiertos a
+            nuevas ideas. Se viene por una pregunta, se escucha a un speaker y se
+            termina conversando con personas que también buscan comunidad.
+          </p>
+        </div>
+        <div class="concept-card">
+          <p>Buenas preguntas.</p>
+          <p>Nuevas personas.</p>
+          <p>Una mesa.</p>
+          <p>Y algo de qué hablar.</p>
+        </div>
+        <div class="concept-flow">
+          <p class="section-label">Cómo funciona</p>
+          <div class="format-grid">
+            <article>
+              <span>01</span>
+              <h3>Llegar</h3>
+              <p>Un ambiente cálido para entrar en confianza y encontrar tu mesa.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Escuchar</h3>
+              <p>Un speaker abre la noche con una idea, una historia o una pregunta.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Conversar</h3>
+              <p>La mesa toma la palabra: opiniones, dudas, risas y puntos de vista.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Quedarse</h3>
+              <p>Porque la conversación buena casi nunca termina cuando termina el evento.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="topics section" id="temas">
+        <div class="section-head">
+          <p class="section-label">Temas</p>
+          <h2>Preguntas para poner sobre la mesa.</h2>
+        </div>
+        <div class="topic-board">
+          <article><span>Amor</span><p>¿Hombres y mujeres pueden ser realmente amigos?</p></article>
+          <article><span>Amor</span><p>¿Quién se enamora más rápido: hombres o mujeres?</p></article>
+          <article><span>Amor</span><p>¿Por qué los hombres no entienden indirectas?</p></article>
+          <article><span>Amor</span><p>¿Amabilidad o coqueteo?</p></article>
+          <article><span>Amor</span><p>¿El coqueteo murió o solo está madurando?</p></article>
+          <article><span>Amor</span><p>¿Te puede gustar alguien solo porque te hace reír?</p></article>
+          <article><span>Rupturas</span><p>¿Quién supera más rápido una ruptura: quien termina o quien fue dejado?</p></article>
+          <article><span>Atracción</span><p>¿Por qué nos atraen personas que sabemos que nos hacen daño?</p></article>
+          <article><span>Autoestima</span><p>¿Qué pasa cuando tu valor parece depender de cómo te ves?</p></article>
+          <article><span>Autoestima</span><p>¿Nos queremos o solo nos sentimos bien cuando nos vemos mejor que otros?</p></article>
+          <article><span>Identidad</span><p>¿Queremos ser buenos o parecer interesantes?</p></article>
+          <article><span>Salud emocional</span><p>¿Cuesta decir “no estoy bien”?</p></article>
+          <article><span>Juventud</span><p>¿Estamos disfrutando nuestra juventud o sobreviviendo?</p></article>
+          <article><span>Juventud</span><p>¿Por qué estamos tan jóvenes y tan cansados?</p></article>
+          <article><span>Futuro</span><p>¿Por qué todos sentimos que vamos tarde?</p></article>
+          <article><span>Futuro</span><p>¿El futuro nos ilusiona o nos está dando miedo?</p></article>
+          <article><span>Felicidad</span><p>Felicidad: ¿se construye, se encuentra o se persigue?</p></article>
+          <article><span>Familia</span><p>¿Le debemos algo a la versión de nosotros que nuestra familia imaginó?</p></article>
+          <article><span>Cambio</span><p>¿La gente puede cambiar?</p></article>
+          <article><span>Madurez</span><p>¿Qué hace madura a una persona?</p></article>
+        </div>
+      </section>
+
+      <section class="community section" id="comunidad">
+        <div>
+          <p class="section-label">Comunidad</p>
+          <h2>Para quienes quieren pensar y convivir.</h2>
+        </div>
+        <div class="community-copy">
+          <p>
+            Sobremesa no busca hablarle solo a expertos. Busca reunir jóvenes con
+            disposición de escuchar, preguntar y compartir una experiencia distinta.
+          </p>
+          <a class="button primary" href="#">Unirme a la comunidad</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/logo-horizontal.png" alt="Sobremesa" />
+      <p>Ven por la pregunta, quédate por la conversación.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
