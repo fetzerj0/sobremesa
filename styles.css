@@ -584,6 +584,62 @@ h3 {
   padding-left: 26px;
 }
 
+.social {
+  text-align: center;
+  color: var(--cream);
+  background: var(--terra);
+}
+
+.social .section-label {
+  color: var(--cream);
+  opacity: 0.8;
+}
+
+.social p:not(.section-label) {
+  max-width: 460px;
+  margin: 0 auto 30px;
+  color: rgba(246, 238, 234, 0.86);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-link {
+  display: inline-flex;
+  min-height: 56px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 999px;
+  padding: 12px 26px 12px 18px;
+  color: var(--terra);
+  background: var(--cream);
+  font-family: "Bebas Neue", Inter, sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  transition: transform 180ms ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+.social-link svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.social-link svg .dot {
+  fill: currentColor;
+  stroke: none;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
