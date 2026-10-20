@@ -471,6 +471,68 @@ h3 {
   line-height: 1;
 }
 
+.speaker {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1fr);
+  gap: clamp(28px, 6vw, 80px);
+  align-items: center;
+  background: var(--white);
+}
+
+.speaker-flyer {
+  width: 100%;
+  max-width: 520px;
+  margin: 0;
+}
+
+.speaker-flyer img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.speaker .section-label {
+  color: var(--terra);
+}
+
+.speaker-copy p:not(.section-label) {
+  max-width: 520px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.speaker-copy p.speaker-question {
+  margin: 26px 0;
+  border-left: 3px solid var(--sky);
+  padding-left: 18px;
+  color: var(--navy);
+  font-family: "Bebas Neue", Inter, sans-serif;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+}
+
+.speaker-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin: 0 0 30px;
+}
+
+.speaker-facts dt {
+  color: var(--terra);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.speaker-facts dd {
+  margin: 5px 0 0;
+  font-weight: 800;
+}
+
 .concept {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
@@ -684,6 +746,7 @@ h3 {
   }
 
   .event-layout,
+  .speaker,
   .concept,
   .community {
     grid-template-columns: 1fr;
