@@ -1,5 +1,6 @@
 const filters = document.querySelectorAll(".filter");
 const events = document.querySelectorAll("[data-tags]");
+const emptyMessage = document.querySelector(".events-empty");
 
 filters.forEach((filter) => {
   filter.addEventListener("click", () => {
@@ -13,5 +14,8 @@ filters.forEach((filter) => {
       const shouldShow = value === "all" || tags.includes(value);
       event.classList.toggle("is-hidden", !shouldShow);
     });
+
+    const anyVisible = [...events].some((event) => !event.classList.contains("is-hidden"));
+    emptyMessage.hidden = anyVisible;
   });
 });
