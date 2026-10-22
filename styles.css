@@ -411,9 +411,42 @@ h3 {
 }
 
 .pill.live {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: var(--cream);
   border-color: var(--terra);
   background: var(--terra);
+  transition: transform 180ms ease;
+}
+
+.pill.live:hover {
+  transform: translateY(-2px);
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+  animation: live-pulse 1.6s ease-out infinite;
+}
+
+@keyframes live-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 0 8px rgba(74, 222, 128, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .live-dot {
+    animation: none;
+  }
 }
 
 .featured-copy p,
